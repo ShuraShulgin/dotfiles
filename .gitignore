@@ -1,0 +1,4 @@
+.config/.ssh
+.config/configstore
+.config/pulse
+.config/lazygit/state.yml
