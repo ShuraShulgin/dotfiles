@@ -4,14 +4,21 @@ local conf = require("telescope.config").values
 local json = require "json"
 local spotifyQueue = function(opts)
   opts = opts or {}
-  vim.cmd('!spotify_player get key queue<CR><CR>')
+  local nextSongs = {}
+  local cmdText = "!timeout 5 spotify_player get key queue | jq .queue[].name -r"
+  local results = vim.api.nvim_exec2(cmdText, { output = true })["output"]
+  for row in string.gmatch(results, "[^\n]+") do
+    table.insert(nextSongs, row)
+  end
+  table.remove(nextSongs, 1)
+  print(vim.inspect(nextSongs))
   pickers.new(opts, {
-    prompt_title = "colors",
-    finder = finders.new_table {
-      results = { "red", "green", "blue" }
-    },
-    sorter = conf.generic_sorter(opts),
-  }):find()
+      prompt_title = "spotify player",
+      finder = finders.new_table {
+        results = nextSongs
+      },
+      sorter = conf.generic_sorter(opts),
+    }):find()
 end
 
 spotifyQueue()
