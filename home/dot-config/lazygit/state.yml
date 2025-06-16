@@ -1,0 +1,15 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/sa/dotfiles
+- /home/sa/projects/neovim
+- /home/sa/projects/combroker
+- /home/sa/projects/tmux
+- /home/sa/projects/DefinitelyTyped
+- /home/sa/projects/core
+- /home/sa/projects/core/deister/deistereventsystem
+- /home/sa/projects/core/libgrpcserver/protocol/protocoldefinition
+startuppopupversion: 5
+customcommandshistory:
+- q
+hidecommandlog: false
+ignorewhitespaceindiffview: false

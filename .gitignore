@@ -3,3 +3,4 @@
 .config/pulse
 .config/lazygit/state.yml
 .config/spotify-player
+.config/nvim/.github

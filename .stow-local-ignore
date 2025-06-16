@@ -1,0 +1,10 @@
+RCS
+.+,v
+CVS
+\.\#.+
+\.cvsignore
+
+\.git
+\.gitignore
+
+^/README.*
