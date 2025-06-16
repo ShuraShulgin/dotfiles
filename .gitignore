@@ -2,3 +2,4 @@
 .config/configstore
 .config/pulse
 .config/lazygit/state.yml
+.config/spotify-player
