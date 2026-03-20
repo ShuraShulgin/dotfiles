@@ -1,9 +1,11 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/sa/dotfiles
+- /home/sa/dotfiles/home/dot-tmux/plugins/catppuccin/tmux
 - /home/sa/dotfiles/home/dot-config/nvim
-- /home/sa/dotfiles/home/dot-tmux/plugins/tpm
 - /home/sa/projects/neovim
+- /home/sa/.config/nvim
+- /home/sa/dotfiles/home/dot-tmux/plugins/tpm
 - /home/sa/projects/combroker
 - /home/sa/projects/tmux
 - /home/sa/projects/DefinitelyTyped
